@@ -1,37 +1,14 @@
-## Welcome to GitHub Pages
+## Balado.tools
+Balado.tools est une liste de différents outils/tutoriels pour podcasteurs. Si vous êtes créateur d’un outil/tutoriel (ou que vous en connaissez un) et que vous voulez qu’il soit ajouté à cette liste, n’hésitez pas à me contacter [Bigaston](https://twitter.com/Bigaston) via Twitter pour que je l’ajoute à la liste!
 
-You can use the [editor on GitHub](https://github.com/Bigaston/balado.tools/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Et si vous voulez avoir un nom de domaine en **votre-outils.balado.tools** qui redirige vers le site de votre projet, n’hésitez pas à me contacter également!
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Outils
 
-### Markdown
+### Génération/amélioration du flux RSS
+- [Podcast RSS Generator From Folder](https://github.com/misnard/Podcast-rss-generator-from-folder) (Par Misnard) : Génère un flux RSS à partir d'un dossier de fichier MP3 avec les id3tags bien remplies
+- [Podcast XSL Template](https://github.com/PhilGoud/podcast-XSL-template) (Par Phil_Goud) : Un fichier .xsl permetant d'afficher votre flux RSS comme un site Web
+- [Castbuilder](https://castbuilder.balado.tools) (Par Bigaston) : Outil codé en NodeJS et ajoutant une interface en ligne de commande permetant de générer un flux RSS et un site statique à partit de fichiers Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Bigaston/balado.tools/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Lecteur de podcast
+- [Pijapp](https://pijapp.balado.tools) (Par Bigaston) : Un simple player de podcast à intégrer sur son site, et supportant les descriptions avec de l'HTML et les chapitres
