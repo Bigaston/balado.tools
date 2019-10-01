@@ -11,3 +11,6 @@ Et si vous voulez avoir un nom de domaine en **votre-outils.balado.tools** qui r
 
 ### Lecteur de podcast
 - [Pijapp](https://pijapp.balado.tools) (Par Bigaston) : Un simple player de podcast à intégrer sur son site, et supportant les descriptions avec de l'HTML et les chapitres
+
+### Edition des ID3Tags
+- [PodChapter](https://github.com/Bigaston/PodChapter) (Par Bigaston) : Outil permetant d'ajouter des chapitres à ses fichiers MP3, via FFMPEG
