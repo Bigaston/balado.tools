@@ -4,6 +4,7 @@ const publicSpreadsheetUrl =
   "https://docs.google.com/spreadsheets/d/1cmInVkZw_Qzfbev_v5DQnI8QT6_GBrLa1mQyvyxARm8/edit?usp=sharing"; // change this to your own URL
 const categoryStartNum = 3; // let the program know where the categoy begins on the spreadsheet column. Default value is 3.
 const sheetName = "Liens"; // this has to match your google doc sheet name
+const contribSheetName = "Contributeurs";
 const punctuation = ": "; // this changes the punctuation between the title and the description. In most cases you'd want to use "," or "-" or ":"
 
 var dataTable = [];
@@ -14,7 +15,7 @@ function init() {
   Tabletop.init({
     key: publicSpreadsheetUrl,
     callback: showInfo,
-    simpleSheet: true,
+    simpleSheet: false,
   });
 }
 
@@ -29,17 +30,19 @@ function showInfo(data, tabletop) {
     addButton(columnArray[j]);
   }
 
+  let dataLink = data[sheetName].all();
+
   //makes the data table used later
-  for (let j = 0; j < data.length; j++) {
+  for (let j = 0; j < dataLink.length; j++) {
     dataTable[j] = [
-      data[j][columnArray[0]],
-      data[j][columnArray[1]],
-      data[j][columnArray[2]],
+      dataLink[j][columnArray[0]],
+      dataLink[j][columnArray[1]],
+      dataLink[j][columnArray[2]],
       [],
     ];
     //console.log(dataTable[j])
     for (let i = categoryStartNum; i < columnArray.length; i++) {
-      if (data[j][columnArray[i]] == checked) {
+      if (dataLink[j][columnArray[i]] == checked) {
         dataTable[j][3].push(columnArray[i]);
       }
     }
@@ -49,6 +52,20 @@ function showInfo(data, tabletop) {
   allButton.classList.add("active");
   activeButtons.push("Tous");
   filterSelection();
+
+  // Ajout des contributeurs
+  let dataContrib = data[contribSheetName].all();
+  let contribP = document.getElementById("contrib");
+
+  dataContrib.forEach((c) => {
+    let a = document.createElement("a");
+    a.innerHTML = c.Username;
+    a.href = c.Link;
+    a.target = "_blank";
+
+    contribP.appendChild(a);
+    contribP.innerHTML = contribP.innerHTML + " ";
+  });
 }
 
 function addButton(columnName) {
