@@ -10,6 +10,12 @@ const punctuation = ": "; // this changes the punctuation between the title and 
 var dataTable = [];
 var activeButtons = [];
 
+let hash = location.hash.substr(1);
+
+if (hash === "tips") {
+  goToTips();
+}
+
 // tableTop.js script
 function init() {
   Tabletop.init({
@@ -203,3 +209,24 @@ function filterSelection() {
 }
 
 window.addEventListener("DOMContentLoaded", init);
+
+// PARTIE TIPS
+function goToTips() {
+  document.getElementById("mainPage").style.display = "none";
+  document.getElementById("tipsPage").style.display = "block";
+
+  document.getElementById("mainLink").classList.remove("selectedLink");
+  document.getElementById("tipsLink").classList.add("selectedLink");
+
+  window.location.hash = "tips";
+}
+
+function goToMain() {
+  document.getElementById("mainPage").style.display = "block";
+  document.getElementById("tipsPage").style.display = "none";
+
+  document.getElementById("mainLink").classList.add("selectedLink");
+  document.getElementById("tipsLink").classList.remove("selectedLink");
+
+  window.location.hash = "";
+}

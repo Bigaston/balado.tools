@@ -131,3 +131,24 @@ footer p {
 .removeFilter:hover {
   cursor: pointer;
 }
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.navLink {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+.navLink:hover {
+  cursor: pointer;
+}
+
+.selectedLink {
+  border-bottom: solid 2px black;
+}
