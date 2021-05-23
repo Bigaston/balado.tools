@@ -38,7 +38,6 @@ p {
 a.itemLink,
 p.itemPara {
   float: left;
-  display: inline-block;
   border-radius: 12px;
   background-color: #f1f1f1;
 }
@@ -123,4 +122,12 @@ footer p {
   margin: 0;
   padding: 0;
   text-align: center;
+}
+
+.removeFilter {
+  font-style: italic;
+}
+
+.removeFilter:hover {
+  cursor: pointer;
 }

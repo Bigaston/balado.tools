@@ -32,47 +32,51 @@
     <script src="/script.js"></script>
   </head>
   <body>
-    <div class="divContainer">
-      <h1>🎙️ Balado.Tools</h1>
-      <p>
-        Il peut-être difficile de se lancer dans le podcast quand on manque
-        d'outils. C'est pour ça que j'ai voulus essayer d'en rassembler un
-        maximum sur cette page, triés en fonction de différentes catégories. Il
-        y aura à la fois des outils gratuits, payants, en ligne, à héberger soit
-        même, pour l'hébergement, ou le montage. Bref, de quoi pouvoir créer son
-        podcast le plus facilement possible!
-      </p>
-    </div>
-
-    <div class="divContainer">
-      <div id="btnContainer">
-        <!--       do not change - sorting buttons are dynamically generated into #myBtnContainer -->
-      </div>
-      <div>
-        <p id="currentlyShowing">
-          <b>Montre actuellement: </b> 0 outil avec <b>tous</b> les attributs
-          suivants - Aucun. Cliquez sur un attribut pour commencer!
+    <div id="mainPage">
+      <div class="divContainer">
+        <h1>🎙️ Balado.Tools</h1>
+        <p>
+          Il peut-être difficile de se lancer dans le podcast quand on manque
+          d'outils. C'est pour ça que j'ai voulus essayer d'en rassembler un
+          maximum sur cette page, triés en fonction de différentes catégories.
+          Il y aura à la fois des outils gratuits, payants, en ligne, à héberger
+          soit même, pour l'hébergement, ou le montage. Bref, de quoi pouvoir
+          créer son podcast le plus facilement possible!
         </p>
       </div>
+
+      <div class="divContainer">
+        <div id="btnContainer">
+          <!--       do not change - sorting buttons are dynamically generated into #myBtnContainer -->
+        </div>
+        <div>
+          <p id="currentlyShowing">
+            <b>Montre actuellement: </b> 0 outil avec <b>tous</b> les attributs
+            suivants - Aucun. Cliquez sur un attribut pour commencer!
+          </p>
+        </div>
+      </div>
+
+      <div id="container" class="container">
+        <!--       do not change - paragraphs and links are dynamically generated into .container -->
+      </div>
+
+      <footer>
+        <p>
+          Vous avez une suggestion? N'hésitez pas à me l'envoyer sur
+          <a href="https://twitter.com/Bigaston">Twitter</a>.
+        </p>
+        <p>
+          Inspiré de
+          <a href="https://tinytools.directory/">tinytools.directory</a>, basé
+          sur <a href="https://glitch.com/~leafy-template">Leafy</a> et
+          <a href="https://github.com/jsoma/tabletop">Tabletop.js</a>
+        </p>
+
+        <p id="contrib">Contributeurs:</p>
+      </footer>
     </div>
 
-    <div id="container" class="container">
-      <!--       do not change - paragraphs and links are dynamically generated into .container -->
-    </div>
-
-    <footer>
-      <p>
-        Vous avez une suggestion? N'hésitez pas à me l'envoyer sur
-        <a href="https://twitter.com/Bigaston">Twitter</a>.
-      </p>
-      <p>
-        Inspiré de
-        <a href="https://tinytools.directory/">tinytools.directory</a>, basé sur
-        <a href="https://glitch.com/~leafy-template">Leafy</a> et
-        <a href="https://github.com/jsoma/tabletop">Tabletop.js</a>
-      </p>
-
-      <p id="contrib">Contributeurs: </p>
-    </footer>
+    <div id="tipsPage" style="display: none"></div>
   </body>
 </html>

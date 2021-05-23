@@ -192,7 +192,7 @@ function filterSelection() {
       "Aucun. Cliquez sur un attribut pour commencer! ";
   } else {
     currentlyShowing.innerHTML +=
-      " <a onclick=removeAllFilters()>Retirer tous les filtres.</a>";
+      ' <a onclick=removeAllFilters() class="removeFilter">Retirer tous les filtres.</a>';
   }
 
   //add a function to switch to ANY of the tags?
