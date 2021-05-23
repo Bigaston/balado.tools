@@ -5,7 +5,7 @@ const publicSpreadsheetUrl =
 const categoryStartNum = 3; // let the program know where the categoy begins on the spreadsheet column. Default value is 3.
 const sheetName = "Liens"; // this has to match your google doc sheet name
 const contribSheetName = "Contributeurs";
-const tipsSheet = "Tips";
+const tipsSheet = "Astuce";
 const punctuation = ": "; // this changes the punctuation between the title and the description. In most cases you'd want to use "," or "-" or ":"
 
 const mdConverter = new showdown.Converter();
