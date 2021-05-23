@@ -5,7 +5,10 @@ const publicSpreadsheetUrl =
 const categoryStartNum = 3; // let the program know where the categoy begins on the spreadsheet column. Default value is 3.
 const sheetName = "Liens"; // this has to match your google doc sheet name
 const contribSheetName = "Contributeurs";
+const tipsSheet = "Tips";
 const punctuation = ": "; // this changes the punctuation between the title and the description. In most cases you'd want to use "," or "-" or ":"
+
+const mdConverter = new showdown.Converter();
 
 var dataTable = [];
 var activeButtons = [];
@@ -71,6 +74,45 @@ function showInfo(data, tabletop) {
 
     contribP.appendChild(a);
     contribP.innerHTML = contribP.innerHTML + " ";
+  });
+
+  // Ajout des tips
+  let dataTips = data[tipsSheet].all();
+  let tipsContainer = document.getElementById("tipsContainer");
+
+  console.log(dataTips);
+
+  dataTips.forEach((t) => {
+    let div = document.createElement("div");
+
+    div.classList.add("tips");
+
+    // Avatar de l'auteur
+    let avatar = document.createElement("img");
+    avatar.src = t.Avatar;
+    avatar.alt = "Avatar de " + t.Auteur;
+
+    div.appendChild(avatar);
+
+    // Conteneur de droite
+    let rightDiv = document.createElement("div");
+
+    div.appendChild(rightDiv);
+
+    // Tips
+    let div2 = document.createElement("div");
+    div2.innerHTML = mdConverter.makeHtml(t.Texte);
+
+    rightDiv.appendChild(div2);
+
+    // Nom
+    let a = document.createElement("a");
+    a.innerHTML = t.Auteur;
+    a.href = t.URL;
+
+    rightDiv.appendChild(a);
+
+    tipsContainer.appendChild(div);
   });
 }
 

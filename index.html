@@ -17,6 +17,7 @@
 
     <!-- import tabletop.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.0/dist/showdown.min.js"></script>
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
@@ -81,7 +82,18 @@
       </footer>
     </div>
 
-    <div id="tipsPage" style="display: none"></div>
+    <div id="tipsPage" style="display: none">
+      <div class="divContainer">
+        <h1>💬 Balado.Tools - Tips</h1>
+        <p>
+          Quand on se lance dans le podcast, on peut avoir besoin de conseils et
+          d'aide. Alors sur cette page retrouver ceux prodigués par d'autres
+          podcasteurs!
+        </p>
+      </div>
+
+      <div id="tipsContainer"></div>
+    </div>
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js"></script>
