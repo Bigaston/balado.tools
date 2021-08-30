@@ -2,10 +2,12 @@
 
 const linkSpreedsheet =
   "https://docs.google.com/spreadsheets/d/e/2PACX-1vQLs4ffsO-CWK13TuzdK5HOQeKwYYU7NPYEFm1enBJ3BWyi9-kxy-uJxFhhF1wptAI8xQIIYBHvZn5J/pub?gid=0&single=true&output=csv"; // change this to your own URL
+const linkContrib =
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQLs4ffsO-CWK13TuzdK5HOQeKwYYU7NPYEFm1enBJ3BWyi9-kxy-uJxFhhF1wptAI8xQIIYBHvZn5J/pub?gid=2186560&single=true&output=csv";
+const linkTips =
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQLs4ffsO-CWK13TuzdK5HOQeKwYYU7NPYEFm1enBJ3BWyi9-kxy-uJxFhhF1wptAI8xQIIYBHvZn5J/pub?gid=1657545455&single=true&output=csv";
+
 const categoryStartNum = 3; // let the program know where the categoy begins on the spreadsheet column. Default value is 3.
-const sheetName = "Liens"; // this has to match your google doc sheet name
-const contribSheetName = "Contributeurs";
-const tipsSheet = "Astuce";
 const punctuation = ": "; // this changes the punctuation between the title and the description. In most cases you'd want to use "," or "-" or ":"
 
 const mdConverter = new showdown.Converter();
@@ -21,26 +23,37 @@ if (hash === "tips") {
 
 // tableTop.js script
 function init() {
-  Papa.parse(publicSpreadsheetUrl, {
+  Papa.parse(linkSpreedsheet, {
     download: true,
     header: true,
     complete: function (results) {
       var data = results.data;
-      console.log(data);
+      showLink(data);
     },
   });
 
-  Tabletop.init({
-    key: publicSpreadsheetUrl,
-    callback: showInfo,
-    simpleSheet: false,
+  Papa.parse(linkContrib, {
+    download: true,
+    header: true,
+    complete: function (results) {
+      var data = results.data;
+      showContrib(data);
+    },
+  });
+
+  Papa.parse(linkTips, {
+    download: true,
+    header: true,
+    complete: function (results) {
+      var data = results.data;
+      showTips(data);
+    },
   });
 }
 
-function showInfo(data, tabletop) {
+function showLink(data) {
   var checked = "x";
-  var columnArray = tabletop.sheets()[sheetName].columnNames;
-  var columnName = [columnArray.length];
+  var columnArray = Object.keys(data[0]);
 
   document.getElementById("btnContainer").innerHTML = "";
   // create sorting buttons
@@ -48,19 +61,17 @@ function showInfo(data, tabletop) {
     addButton(columnArray[j]);
   }
 
-  let dataLink = data[sheetName].all();
-
   //makes the data table used later
-  for (let j = 0; j < dataLink.length; j++) {
+  for (let j = 0; j < data.length; j++) {
     dataTable[j] = [
-      dataLink[j][columnArray[0]],
-      dataLink[j][columnArray[1]],
-      dataLink[j][columnArray[2]],
+      data[j][columnArray[0]],
+      data[j][columnArray[1]],
+      data[j][columnArray[2]],
       [],
     ];
     //console.log(dataTable[j])
     for (let i = categoryStartNum; i < columnArray.length; i++) {
-      if (dataLink[j][columnArray[i]] == checked) {
+      if (data[j][columnArray[i]] == checked) {
         dataTable[j][3].push(columnArray[i]);
       }
     }
@@ -70,28 +81,29 @@ function showInfo(data, tabletop) {
   allButton.classList.add("active");
   activeButtons.push("Tous");
   filterSelection();
+}
 
+function showContrib(data) {
   // Ajout des contributeurs
-  let dataContrib = data[contribSheetName].all();
   let contribP = document.getElementById("contrib");
 
-  dataContrib.forEach((c) => {
+  data.forEach((c) => {
     let a = document.createElement("a");
     a.innerHTML = c.Username;
     a.href = c.Link;
     a.target = "_blank";
-
     contribP.appendChild(a);
     contribP.innerHTML = contribP.innerHTML + " ";
   });
+}
 
+function showTips(data) {
   // Ajout des tips
-  let dataTips = data[tipsSheet].all();
   let tipsContainer = document.getElementById("tipsContainer");
 
-  shuffle(dataTips);
+  shuffle(data);
 
-  dataTips.forEach((t) => {
+  data.forEach((t) => {
     let div = document.createElement("div");
 
     div.classList.add("tips");
