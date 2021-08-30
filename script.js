@@ -1,7 +1,7 @@
 // editable info
 
-const publicSpreadsheetUrl =
-  "https://docs.google.com/spreadsheets/d/1cmInVkZw_Qzfbev_v5DQnI8QT6_GBrLa1mQyvyxARm8/edit?usp=sharing"; // change this to your own URL
+const linkSpreedsheet =
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQLs4ffsO-CWK13TuzdK5HOQeKwYYU7NPYEFm1enBJ3BWyi9-kxy-uJxFhhF1wptAI8xQIIYBHvZn5J/pub?gid=0&single=true&output=csv"; // change this to your own URL
 const categoryStartNum = 3; // let the program know where the categoy begins on the spreadsheet column. Default value is 3.
 const sheetName = "Liens"; // this has to match your google doc sheet name
 const contribSheetName = "Contributeurs";
@@ -21,6 +21,15 @@ if (hash === "tips") {
 
 // tableTop.js script
 function init() {
+  Papa.parse(publicSpreadsheetUrl, {
+    download: true,
+    header: true,
+    complete: function (results) {
+      var data = results.data;
+      console.log(data);
+    },
+  });
+
   Tabletop.init({
     key: publicSpreadsheetUrl,
     callback: showInfo,
