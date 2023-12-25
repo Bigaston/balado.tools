@@ -35,11 +35,6 @@
       </header>
 
       <div class="tags">
-        <p>
-          <b>Montre actuellement: </b>
-          <span id="toolNumber">{{tools.length}} outils</span>
-        </p>
-
         <div class="tags-container">
           {% for tag in tags %}
             <button
@@ -48,6 +43,11 @@
             >{{ tag }}</button>
           {% endfor %}
         </div>
+
+        <p>
+          <b>Montre actuellement: </b>
+          <span id="toolNumber">{{tools.length}} outils</span>
+        </p>
       </div>
 
       <div class="tool-container">

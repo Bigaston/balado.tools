@@ -12,6 +12,9 @@
     "@11ty/eleventy": "^2.0.1"
   },
   "dependencies": {
-    "js-yaml": "^4.1.0"
+    "js-yaml": "^4.1.0",
+    "mime-types": "^2.1.35",
+    "node-fetch": "^2.7.0",
+    "node-html-parser": "^6.1.12"
   }
 }

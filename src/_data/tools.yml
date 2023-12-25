@@ -8,13 +8,6 @@
     - Web
     - Gratuit
     - Payant
-- name: PAF
-  url: https://paf.bigaston.dev/
-  description: Un cartoucheur gratuit en ligne
-  tags:
-    - Enregistrement
-    - Web
-    - Gratuit
 - name: Pod.yt
   url: https://pod.yt/
   description: Reducteur d'URL dédié au podcast sur YouTube
@@ -190,20 +183,6 @@
   tags:
     - Partage
     - Gratuit
-- name: Jingle Palette
-  url: https://www.jinglepalette.com/
-  description: Cartoucheur gratuit et complêt sur Windows
-  tags:
-    - Enregistrement
-    - Windows
-    - Gratuit
-- name: Voicemeeter
-  url: https://vb-audio.com/Voicemeeter/index.htm
-  description: Table de mixage virtuelle sous Windows, avec système de routage de sons
-  tags:
-    - Enregistrement
-    - Windows
-    - Gratuit
 - name: Loudness Penalty
   url: https://www.loudnesspenalty.com/
   description: >-
@@ -270,14 +249,6 @@
     - Enregistrement
     - Mac
     - Gratuit
-- name: SteamBeats
-  url: https://www.streambeats.com/
-  description: >-
-    De la musique libre de droit pour vos podcasts / steams / vidéo (également
-    sur Spotify)
-  tags:
-    - Gratuit
-    - Ressources
 - name: Cleanfeed
   url: https://cleanfeed.net/
   description: Enregistrement audio à distance simplifié et gratuit
