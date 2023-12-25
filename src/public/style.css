@@ -33,11 +33,47 @@ a {
   color: #000000;
 }
 
-#container {
-  margin: 0 20px;
+.tags {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.tags-container {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+  justify-content: left;
+}
+
+.tag {
+  background-color: white;
+  border: 1px solid #ebedef;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.tag.selected {
+  background-color: #ebedef;
+}
+
+.tag.selected::before {
+  content: "✓";
+  margin-right: 5px;
+}
+
+.tag:hover {
+  cursor: pointer;
+}
+
+.tool-container {
+  margin: 0 20px;
+  gap: 5px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
 }
 
 .tool {
@@ -46,6 +82,11 @@ a {
   padding: 5px;
   border-radius: 3px;
   margin: 0;
+  margin-bottom: 10px;
+}
+
+.tool.hidden {
+  display: none;
 }
 
 footer {

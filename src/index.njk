@@ -31,24 +31,23 @@
         </p>
       </header>
 
-      {# <div class="divContainer">
-        <div id="btnContainer">
-          {% for category in categories %}
+      <div class="tags">
+        <p>
+          <b>Montre actuellement: </b>
+          <span id="toolNumber">{{tools.length}}</span> outil
+        </p>
+
+        <div class="tags-container">
+          {% for tag in tags %}
             <button
-            class="btn"
-            onclick="filterSelection('{{ tool.category }}')"
-            >{{ category }}</button>
+              class="tag"
+              data-tag="{{ tag }}"
+            >{{ tag }}</button>
           {% endfor %}
         </div>
-        <div>
-          <p id="currentlyShowing">
-            <b>Montre actuellement: </b> 0 outil avec <b>tous</b> les attributs
-            suivants - Aucun. Cliquez sur un attribut pour commencer!
-          </p>
-        </div>
-      </div> #}
+      </div>
 
-      <div id="container">
+      <div class="tool-container">
         {% for tool in tools %}
           <p class="tool" data-tags="{{tool.tags.join(",")}}">
             <a href="{{ tool.url }}" target="_blank">{{ tool.name }}</a>:
@@ -75,6 +74,6 @@
     </main>
 
     <!-- import the webpage's javascript file -->
-    {# <script src="/script.js"></script> #}
+    <script src="/script.js"></script>
   </body>
 </html>
