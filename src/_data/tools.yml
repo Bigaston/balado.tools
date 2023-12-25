@@ -4,7 +4,6 @@
     Transformez automatiquement vos podcasts en vidéos pour YouTube et les
     réseaux sociaux
   tags:
-    - Tous
     - Partage
     - Web
     - Gratuit
@@ -13,25 +12,13 @@
   url: https://paf.bigaston.dev/
   description: Un cartoucheur gratuit en ligne
   tags:
-    - Tous
     - Enregistrement
     - Web
-    - Gratuit
-- name: Muffin
-  url: https://muffin.pm/
-  description: Gestionnaire de podcast autohébergé sous Docker
-  tags:
-    - Tous
-    - Hébergement
-    - Windows
-    - Mac
-    - Linux
     - Gratuit
 - name: Pod.yt
   url: https://pod.yt/
   description: Reducteur d'URL dédié au podcast sur YouTube
   tags:
-    - Tous
     - Partage
     - Web
     - Gratuit
@@ -39,7 +26,6 @@
   url: https://github.com/Bigaston/podchapter
   description: Ajout de métadonnés aux fichiers MP3
   tags:
-    - Tous
     - Divers
     - Windows
     - Mac
@@ -50,7 +36,6 @@
   url: https://www.audacityteam.org/
   description: Logiciel d'enregistrement et de montage entièrement gratuit
   tags:
-    - Tous
     - Enregistrement
     - Montage
     - Windows
@@ -62,7 +47,6 @@
   url: https://craig.chat/home/
   description: Bot d'enregistrement multipiste sur Discord
   tags:
-    - Tous
     - Enregistrement
     - Gratuit
     - Open-Source
@@ -70,7 +54,6 @@
   url: https://podcloud.fr/
   description: Hébergeur de podcast créé par des podcasteurs et français
   tags:
-    - Tous
     - Hébergement
     - Web
     - Gratuit
@@ -79,7 +62,6 @@
   url: https://podlibre.org/tag/castopod-host/
   description: Gestionnaire de podcast autohébergé écrit en PHP
   tags:
-    - Tous
     - Hébergement
     - Windows
     - Mac
@@ -90,7 +72,6 @@
   url: https://www.reaper.fm/
   description: Logiciel de montage complet mais abordable
   tags:
-    - Tous
     - Enregistrement
     - Montage
     - Windows
@@ -101,7 +82,6 @@
   url: https://overcast.fm/forecast
   description: Ajout de métadonnés aux fichiers MP3
   tags:
-    - Tous
     - Divers
     - Mac
     - Gratuit
@@ -110,7 +90,6 @@
     https://livre.fnac.com/a15776342/Pour-les-Nuls-Creer-son-Podcast-Poche-pour-les-Nuls-Penelope-Boeuf
   description: Un livre pour tout apprendre à propos de la création de Podcast
   tags:
-    - Tous
     - Payant
     - Livre
     - Ressources
@@ -118,7 +97,6 @@
   url: https://myriapod.terrylaire.fr/
   description: Un site qui regroupe comment ajouter votre podcast sur pleins de plateformes
   tags:
-    - Tous
     - Web
     - Gratuit
     - Ressources
@@ -126,7 +104,6 @@
   url: https://ladigitale.dev/logimix/
   description: Logiciel de montage très simple, gratuit et cross plateforme
   tags:
-    - Tous
     - Enregistrement
     - Montage
     - Windows
@@ -140,7 +117,6 @@
     Des conseils donnés par Yann Rieder sur les choses à faire avant de lancer
     son podcast
   tags:
-    - Tous
     - Web
     - Gratuit
     - Ressources
@@ -150,7 +126,6 @@
     Logiciel de discution vocal OpenSource et gratuit, et inclutant directement
     un enregistrement Multipiste
   tags:
-    - Tous
     - Enregistrement
     - Windows
     - Mac
@@ -161,7 +136,6 @@
   url: https://www.wooji-juice.com/products/ferrite/
   description: Suite de montage et d'enregistrement sur iOS
   tags:
-    - Tous
     - Enregistrement
     - Montage
     - iOS
@@ -172,7 +146,6 @@
     Affiche toutes les information sur un fichier audio/video, format,
     conteneur, caracteristiques
   tags:
-    - Tous
     - Divers
     - Windows
     - Mac
@@ -185,7 +158,6 @@
   url: https://audiomass.co/
   description: Editeur audio entierrement en ligne dans votre navigateur
   tags:
-    - Tous
     - Enregistrement
     - Montage
     - Web
@@ -194,7 +166,6 @@
   url: https://sonobus.net/
   description: Application d'enregistrement multipiste en Peer-To-Peer
   tags:
-    - Tous
     - Enregistrement
     - Windows
     - Mac
@@ -209,7 +180,6 @@
     Site d'enregistrement de podcast à distance, en multipiste et en bonne
     qualité
   tags:
-    - Tous
     - Enregistrement
     - Web
     - Gratuit
@@ -218,14 +188,12 @@
   url: https://www.mp3tag.de/en/
   description: Permet d'ajouter des métadonnés à ses fichiers .MP3
   tags:
-    - Tous
     - Partage
     - Gratuit
 - name: Jingle Palette
   url: https://www.jinglepalette.com/
   description: Cartoucheur gratuit et complêt sur Windows
   tags:
-    - Tous
     - Enregistrement
     - Windows
     - Gratuit
@@ -233,7 +201,6 @@
   url: https://vb-audio.com/Voicemeeter/index.htm
   description: Table de mixage virtuelle sous Windows, avec système de routage de sons
   tags:
-    - Tous
     - Enregistrement
     - Windows
     - Gratuit
@@ -243,7 +210,6 @@
     Outil en ligne permetant de vérifier si le niveau global de votre fichier
     audio n'est pas trop haut
   tags:
-    - Tous
     - Montage
     - Web
     - Gratuit
@@ -253,7 +219,6 @@
     Outil en ligne améliorant automatiquement la qualité sonore de vos fichiers
     audio
   tags:
-    - Tous
     - Montage
     - Web
     - Gratuit
@@ -264,7 +229,6 @@
     Site d'enregistrement de podcast à distance, en multipiste et en bonne
     qualité
   tags:
-    - Tous
     - Enregistrement
     - Web
     - Payant
@@ -272,7 +236,6 @@
   url: https://astrofox.io/
   description: Outil pour générer une vidéo avec des animations en fonction du son
   tags:
-    - Tous
     - Partage
     - Windows
     - Mac
@@ -285,7 +248,6 @@
     Enregistre les applications de votre Mac et microphone, idéal pour les
     podcasts à distance
   tags:
-    - Tous
     - Enregistrement
     - Mac
     - Payant
@@ -295,7 +257,6 @@
     Permet de créer des cartes son virtuelles pour passer le son d’une
     application à une autre
   tags:
-    - Tous
     - Enregistrement
     - Divers
     - Mac
@@ -306,7 +267,6 @@
     Driver audio virtuel MAC, permet de faire une carte son virtuelle et de
     rediriger les sons
   tags:
-    - Tous
     - Enregistrement
     - Mac
     - Gratuit
@@ -316,14 +276,12 @@
     De la musique libre de droit pour vos podcasts / steams / vidéo (également
     sur Spotify)
   tags:
-    - Tous
     - Gratuit
     - Ressources
 - name: Cleanfeed
   url: https://cleanfeed.net/
   description: Enregistrement audio à distance simplifié et gratuit
   tags:
-    - Tous
     - Enregistrement
     - Web
     - Gratuit
@@ -334,7 +292,6 @@
     Article de NPR qui explique les détails à faire attention avant une
     interview
   tags:
-    - Tous
     - Web
     - Ressources
 - name: Tascam Podcast Editor
@@ -343,7 +300,6 @@
     Logiciel de montage de podcast gratuit permetant un export en .MP3, .MP4 et
     .WAV
   tags:
-    - Tous
     - Montage
     - Windows
     - Mac
@@ -354,7 +310,6 @@
     Extension WordPress permettant gratuitement la création et l’administration
     d’un flux rss 
   tags:
-    - Tous
     - Hébergement
     - Partage
     - Web
@@ -364,7 +319,6 @@
   url: https://www.ocenaudio.com/
   description: Editeur de sons très simple et gratuit
   tags:
-    - Tous
     - Enregistrement
     - Montage
     - Windows
@@ -375,13 +329,11 @@
   url: https://peremptoire.fr/ressourcess
   description: Liste de ressources, édité par Péremptoire
   tags:
-    - Tous
     - Ressources
 - name: Podcast Recorder
   url: https://sparklinlabs.itch.io/podcast-recorder
   description: Enregistreur de podcast en local, avec un fichier par micro, en .Wav
   tags:
-    - Tous
     - Enregistrement
     - Windows
     - Gratuit
@@ -389,7 +341,6 @@
   url: https://directpodcast.fr/
   description: Enregistreur audio directement sur le web
   tags:
-    - Tous
     - Enregistrement
     - Web
     - Gratuit
@@ -397,7 +348,6 @@
   url: https://audiobites.io/
   description: Transforme un fichier audio de max 30 secondes en vidéo avec spectre
   tags:
-    - Tous
     - Partage
     - Web
     - Gratuit
@@ -405,7 +355,6 @@
   url: https://getaudiogram.com/
   description: Générateur de vidéo avec spectre et sous titre
   tags:
-    - Tous
     - Web
     - Gratuit
     - Payant
@@ -413,7 +362,6 @@
   url: http://bbcsfx.acropolis.org.uk
   description: Bibliothèque de sons de la BBC (attention à la licence)
   tags:
-    - Tous
     - Montage
     - Gratuit
     - Banque de sons
@@ -422,7 +370,6 @@
   url: 'https://lasonotheque.org '
   description: Bibliothèque de sons gratuite en français
   tags:
-    - Tous
     - Gratuit
     - Banque de sons
     - Ressources
@@ -430,7 +377,6 @@
   url: https://freesound.org/
   description: Bibliothèque de sons gratuits
   tags:
-    - Tous
     - Gratuit
     - Banque de sons
     - Ressources
@@ -438,7 +384,6 @@
   url: ' http://www.felixblume.com/ '
   description: Bibliothèque de sons et d'ambiances
   tags:
-    - Tous
     - Gratuit
     - Banque de sons
     - Ressources
@@ -446,7 +391,6 @@
   url: https://www.studiotjp.com/bruitages/
   description: Banque de bruitages du studio de fiction sonore Studio TJP
   tags:
-    - Tous
     - Gratuit
     - Banque de sons
     - Ressources
@@ -454,7 +398,6 @@
   url: https://www.auboutdufil.com/
   description: Liste de musiques libres de droits
   tags:
-    - Tous
     - Gratuit
     - Musique
     - Ressources
@@ -462,7 +405,6 @@
   url: http://dig.ccmixter.org/
   description: Bibliothèque de musiques pour tous vos projets
   tags:
-    - Tous
     - Gratuit
     - Payant
     - Musique
@@ -471,7 +413,6 @@
   url: https://mobygratis.com/
   description: Musiques gratuites et libre de droits pour projets non commerciaux
   tags:
-    - Tous
     - Gratuit
     - Musique
     - Ressources
@@ -479,14 +420,12 @@
   url: https://www.sonible.com/balancer/
   description: Plugin pour équilibrer ses pistes audio gratuitement
   tags:
-    - Tous
     - Montage
     - Gratuit
 - name: Music In Cloud
   url: https://www.musicincloud.com/
   description: Bibliothèque de musiques libres de droits
   tags:
-    - Tous
     - Gratuit
     - Musique
     - Ressources
@@ -494,7 +433,6 @@
   url: https://www.speakpipe.com/
   description: Boite vocale pour vos auditeurs, sans besoin de créer de comptes
   tags:
-    - Tous
     - Enregistrement
     - Web
     - Gratuit
@@ -503,7 +441,6 @@
   url: https://soundbible.com/
   description: Bibliothèque de sons gratuite
   tags:
-    - Tous
     - Gratuit
     - Banque de sons
     - Ressources
@@ -513,7 +450,6 @@
     Logiciel d'enregistrement et de montage très complêt et gratuit avec un
     grand nombre de plugins
   tags:
-    - Tous
     - Enregistrement
     - Montage
     - Windows
@@ -528,7 +464,6 @@
     Pilote de sons alternatifs à ceux de Windows pour réduire la latance entre
     l'entrée et la sortie
   tags:
-    - Tous
     - Enregistrement
     - Divers
     - Windows
@@ -537,7 +472,6 @@
   url: https://www.asio4all.org/
   description: Bibliothèque de musiques gratuites
   tags:
-    - Tous
     - Gratuit
     - Musique
     - Ressources
@@ -545,7 +479,6 @@
   url: https://incompetech.com/
   description: Bibliothèque de musiques gratuites
   tags:
-    - Tous
     - Gratuit
     - Musique
     - Ressources
@@ -553,7 +486,6 @@
   url: https://vocaroo.com/
   description: Enregistreur vocal simple et directement en ligne
   tags:
-    - Tous
     - Enregistrement
     - Web
     - Gratuit
@@ -561,7 +493,6 @@
   url: https://wavve.co/fr/accueil/
   description: Générateur de vidéo avec spectre pour les réseaux sociaux
   tags:
-    - Tous
     - Partage
     - Web
     - Gratuit
@@ -570,7 +501,6 @@
   url: https://chartable.com/
   description: Outil de statistiques
   tags:
-    - Tous
     - Divers
     - Web
     - Gratuit
@@ -579,7 +509,6 @@
   url: http://analytics.podtrac.com/
   description: Outil de statistiques
   tags:
-    - Tous
     - Divers
     - Web
     - Gratuit
@@ -587,7 +516,6 @@
   url: https://podba.se/
   description: Vérificateur de validité du flux RSS
   tags:
-    - Tous
     - Divers
     - Web
     - Gratuit
@@ -597,7 +525,6 @@
     Outil en Peer2Peer d'affichage de webcam (fonctionnant bien en duo avec
     Mumble par ex)
   tags:
-    - Tous
     - Enregistrement
     - Web
     - Gratuit
@@ -606,7 +533,6 @@
   url: https://podcastindex.org/
   description: Base de donnée de podcast et acteur du podcast décentralisé et libre
   tags:
-    - Tous
     - Divers
     - Gratuit
     - Ressources
@@ -614,7 +540,6 @@
   url: https://podnews.net/
   description: Newsletter sur l'actualité du podcast (En anglais)
   tags:
-    - Tous
     - Gratuit
     - Newsletter
     - Ressources
@@ -622,7 +547,6 @@
   url: https://podmust.com/newsletter/
   description: Newsletter sur l'actualité du podcast en français
   tags:
-    - Tous
     - Gratuit
     - Newsletter
     - Ressources
@@ -630,7 +554,6 @@
   url: 'https://loudness.info/ '
   description: Mesure l'intensité sonore de vos fichiers audio
   tags:
-    - Tous
     - Divers
     - Web
     - Gratuit
@@ -638,7 +561,6 @@
   url: https://iris.fm/
   description: Enregistrement de podcast à distance directement sur navigateur
   tags:
-    - Tous
     - Enregistrement
     - Web
     - Gratuit
@@ -647,21 +569,18 @@
   url: https://peremptoire.fr/blog/
   description: Blog regroupant des articles sous la forme de tutoriels dédiés au podcast
   tags:
-    - Tous
     - Gratuit
     - Ressources
 - name: Médiathèque de Rumilly
   url: https://www.mediatheque-rumilly74.fr/creer-un-podcast.aspx
   description: Article regroupant beaucoup de ressources pour se lancer dans le podcast
   tags:
-    - Tous
     - Gratuit
     - Ressources
 - name: The Podcast Font
   url: https://podcastfont.com/
   description: Police regroupant les icones des sites majeurs de podcasts
   tags:
-    - Tous
     - Gratuit
     - Open-Source
     - Ressources
@@ -670,35 +589,30 @@
     https://peremptoire.fr/blog/bases-montage-podcast-reaper/?utm_campaign=%F0%9F%8C%A5%20La%20M%C3%A9t%C3%A9o&utm_medium=email&utm_source=Revue%20newsletter
   description: Comment commencer le montage sous Reaper par Peremptoire
   tags:
-    - Tous
     - Gratuit
     - Ressources
 - name: podcasts.tips
   url: https://podcasts.tips
   description: Podcast présentant des astuces sur comment bien en faire
   tags:
-    - Tous
     - Gratuit
     - Ressources
 - name: Chosic
   url: https://www.chosic.com/free-music/all/
   description: Banque de musiques gratuites
   tags:
-    - Tous
     - Gratuit
     - Ressources
 - name: Editeddy
   url: https://editeddy.com/
   description: Outil de montage à base de transcript (en Anglais)
   tags:
-    - Tous
     - Montage
     - Web
 - name: Scribe
   url: https://scribe.cemea.org/
   description: Outil de génération de transcript
   tags:
-    - Tous
     - Divers
     - Web
     - Gratuit
@@ -707,7 +621,6 @@
   url: https://www.trebble.fm/online-audio-editor
   description: Outil pour éditer l'audio comme un document word
   tags:
-    - Tous
     - Montage
     - Web
     - Gratuit
@@ -716,7 +629,6 @@
   url: http://flamboyances.fr/profession-podcasteurs/
   description: Podcast pour apprendre à créer un studio de production
   tags:
-    - Tous
     - Gratuit
     - Ressources
 - name: Airtable
@@ -725,7 +637,6 @@
     Outil de type tableur. Possibilité de créer recap, calendrier, kanban et
     automatisation
   tags:
-    - Tous
     - Organisation
     - Web
     - Gratuit
@@ -735,7 +646,6 @@
     https://www.ecoutegenerationpodcast.com/post/les-meilleures-newsletter-sur-les-podcasts-auxquelles-je-suis-abonn%C3%A9e
   description: 'Anne-Fleur Andrle a listé une série de newsletter Us/Fr sur le podcast '
   tags:
-    - Tous
     - Divers
     - Web
     - Gratuit
@@ -745,7 +655,6 @@
   url: https://fr.pikbest.com/free-sound-effects/
   description: Des centaines d'effets sonores
   tags:
-    - Tous
     - Montage
     - Web
     - Gratuit

@@ -1,190 +1,55 @@
-/* CSS files add styling rules to your content */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Titillium+Web:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
 
 body {
-  font-family: helvetica, arial, sans-serif;
-  background-color: #AED6F1;
-  margin: 2em;
-  padding: 2em;
-  font-size: 14px;
-}
-
-@media screen and (max-width: 490px) {
-  body {
-    margin: 5px;
-    padding: 5px;
-  }
-}
-
-.btn,
-p.itemPara,
-p {
-  padding: 12px 16px;
-  margin: 2px;
-}
-
-h1,
-p {
-  padding: 12px 3px;
-  margin: 2px;
-}
-
-a,
-p {
-  color: black;
-  font-size: 14px;
-  line-height: 18px;
-}
-
-a.itemLink,
-p.itemPara {
-  float: left;
-  border-radius: 12px;
-  background-color: #f1f1f1;
-}
-
-.filterDiv,
-.show {
-  float: left;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
   width: 100%;
+  background-color: #fff8e1;
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
 }
 
-.filterDiv,
-.show,
-.btn {
-  margin: 2px 2px;
+header {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.filterDiv {
-  display: none;
-}
-
-.show {
-  display: inline-block;
-}
-
-#myBtnContainer {
-  margin-bottom: 20px;
-}
-
-.container {
-  margin-bottom: 20px;
-  overflow: hidden;
-}
-
-/* Style the buttons */
-.btn {
-  border-radius: 12px;
-  background-color: #f1f1f1;
-  font-size: 14px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: #ddd;
-}
-
-.btn.active {
-  background-color: #666;
-  color: white;
-}
-
-#currentlyShowing {
-  margin-top: 10px;
+a {
+  color: #000000;
 }
 
 #container {
-  margin-top: 10px;
+  margin: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
-.divContainer {
-  background-color: #85C1E9;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.2));
-  padding: 10px;
+.tool {
+  background-color: white;
+  padding: 5px;
+  border-radius: 2px;
+  margin: 0;
 }
 
 footer {
-  background-color: #85C1E9;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.2));
-  padding: 10px;
-  max-width: 500px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #000000;
 }
 
 footer p {
   margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.removeFilter {
-  font-style: italic;
-}
-
-.removeFilter:hover {
-  cursor: pointer;
-}
-
-/* Navigation */
-nav {
-  display: flex;
-  justify-content: center;
-}
-
-.navLink {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 10px;
-  margin-bottom: 20px;
-}
-
-.navLink:hover {
-  cursor: pointer;
-}
-
-.selectedLink {
-  border-bottom: solid 2px black;
-}
-
-/* Tips */
-.tips {
-  display: flex;
-  flex-direction: row;
-  width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #85C1E9;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.2));
-  padding: 10px;
-  align-items: center;
-}
-
-.tips img {
-  height: 100px;
-  border-radius: 50px;
-}
-
-.tips > div {
-  display: flex;
-  flex-direction: column;
-  margin-left: 10px;
-  width: 100%;
-}
-
-.tips > div > div > p {
-  text-align: justify;
-}
-
-.tips > div > a {
-  display: block;
-  margin-left: auto;
+  margin-top: 10px;
 }

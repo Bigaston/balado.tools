@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>🎙️ Balado.Tools</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <meta property="og:title" content="Balado.Tools"/>
+    <meta
+      property="og:description"
+      content="Une liste de pleins d'outils utiles pour faire du podcast avec ou sans budget"
+/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://balado.tools"/>
+    <meta name="theme-color" content="#AED6F1"/>
+
+    <link rel="stylesheet" href="/style.css"/>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>🎙️ Balado.Tools</h1>
+        <p>
+          Il peut-être difficile de se lancer dans le podcast quand on manque
+          d'outils. C'est pour ça que j'ai voulus essayer d'en rassembler un
+          maximum sur cette page, triés en fonction de différentes catégories.
+          Il y aura à la fois des outils gratuits, payants, en ligne, à héberger
+          soit même, pour l'hébergement, ou le montage. Bref, de quoi pouvoir
+          créer son podcast le plus facilement possible!
+        </p>
+      </header>
+
+      {# <div class="divContainer">
+        <div id="btnContainer">
+          {% for category in categories %}
+            <button
+            class="btn"
+            onclick="filterSelection('{{ tool.category }}')"
+            >{{ category }}</button>
+          {% endfor %}
+        </div>
+        <div>
+          <p id="currentlyShowing">
+            <b>Montre actuellement: </b> 0 outil avec <b>tous</b> les attributs
+            suivants - Aucun. Cliquez sur un attribut pour commencer!
+          </p>
+        </div>
+      </div> #}
+
+      <div id="container">
+        {% for tool in tools %}
+          <p class="tool" data-tags="{{tool.tags.join(",")}}">
+            <a href="{{ tool.url }}" target="_blank">{{ tool.name }}</a>:
+            {{tool.description}}
+          </p>
+        {% endfor %}
+      </div>
+
+      <footer>
+        <p>
+          Inspiré de
+          <a href="https://tinytools.directory/">tinytools.directory</a>
+        </p>
+        <p>Code source: <a href="https://github.com/Bigaston/balado.tools">github.com/Bigaston/balado.tools</a>
+        </p>
+
+        <p id="contrib">Contributeurs: </p>
+        <div class="contrib">
+          {% for contrib in contributors %}
+            <a href="{{ contrib.url }}" target="_blank">{{ contrib.name }}</a>
+          {% endfor %}
+        </div>
+      </footer>
+    </main>
+
+    <!-- import the webpage's javascript file -->
+    {# <script src="/script.js"></script> #}
+  </body>
+</html>
